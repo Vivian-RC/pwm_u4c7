@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "vivian",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "board-pi-pico-w",
+      "id": "pico",
+      "top": -70.45,
+      "left": -130.85,
+      "attrs": { "builder": "pico-sdk" }
+    },
+    { "type": "wokwi-servo", "id": "servo1", "top": -78.8, "left": 0, "attrs": {} },
+    { "type": "wokwi-led-rgb", "id": "led_rgb", "top": -50, "left": 50, "attrs": {} }
+  ],
+  "connections": [
+    [ "pico:GND.8", "servo1:GND", "black", [ "h0" ] ],
+    [ "pico:3V3", "servo1:V+", "green", [ "h0" ] ],
+    [ "pico:GP22", "servo1:PWM", "green", [ "h0" ] ],
+    [ "pico:GND.9", "led_rgb:GND", "black", [ "h0" ] ],
+    [ "pico:3V3", "led_rgb:VCC", "red", [ "h0" ] ],
+    [ "pico:GP12", "led_rgb:R", "blue", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
