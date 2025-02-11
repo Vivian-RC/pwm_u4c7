@@ -11,7 +11,21 @@
       "attrs": { "builder": "pico-sdk" }
     },
     { "type": "wokwi-servo", "id": "servo1", "top": -78.8, "left": 0, "attrs": {} },
-    { "type": "wokwi-led-rgb", "id": "led_rgb", "top": -50, "left": 50, "attrs": {} }
+    { "type": "wokwi-led-rgb", "id": "led_rgb", "top": -50, "left": 50, "attrs": {} },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 109.55,
+      "left": -211.2,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 15.6,
+      "left": -236.2,
+      "attrs": { "color": "blue" }
+    }
   ],
   "connections": [
     [ "pico:GND.8", "servo1:GND", "black", [ "h0" ] ],
@@ -19,7 +33,10 @@
     [ "pico:GP22", "servo1:PWM", "green", [ "h0" ] ],
     [ "pico:GND.9", "led_rgb:GND", "black", [ "h0" ] ],
     [ "pico:3V3", "led_rgb:VCC", "red", [ "h0" ] ],
-    [ "pico:GP12", "led_rgb:R", "blue", [ "h0" ] ]
+    [ "pico:GP12", "led_rgb:R", "blue", [ "h0" ] ],
+    [ "r1:2", "pico:GND.4", "green", [ "v0" ] ],
+    [ "led1:C", "r1:1", "green", [ "v0" ] ],
+    [ "led1:A", "pico:GP12", "green", [ "v0" ] ]
   ],
   "dependencies": {}
 }
