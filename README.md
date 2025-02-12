@@ -72,7 +72,7 @@ PWM Servo: 500 µs, LED Intensity: 0%
 ---
 ## 🎥 **Demonstração em Vídeo**
 Para uma melhor compreensão do funcionamento do projeto, assista ao vídeo demonstrativo:
-🔗 [https://youtube.com/shorts/irCNqu1E2Hk?feature=share](#) *(Substituir pelo link do vídeo após o upload)*
+🔗 https://youtube.com/shorts/irCNqu1E2Hk?feature=share
 
 ---
 ## 📌 **Funcionamento do Código**
