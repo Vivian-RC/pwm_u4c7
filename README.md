@@ -82,5 +82,4 @@ Para uma melhor compreensão do funcionamento do projeto, assista ao vídeo demo
 4. **O LED desliga quando o servo está em 0°**.
 5. Os valores são exibidos no **Serial Monitor**.
 
-📌 **Loop contínuo:** O processo se repete indefinidamente.
 
